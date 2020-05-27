@@ -1,0 +1,121 @@
+body{
+    height: 100%;
+    background-color: #fff;
+    min-height: 100px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Comic Sans MS;
+}
+
+
+
+header{
+    height: 15vh;
+    float:left;
+    min-height: 100%;
+  
+}
+
+h1{
+    border: 1px solid black;
+    text-align: center;
+    
+}
+
+
+.container{
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+    
+.box{
+    position: relative;
+    border: 1px solid black;
+    width: 400px;
+    padding: 0px;
+    background: #ADD8E6;
+    border-radius: 4px;
+    margin: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+.box:nth-child(1) .icon{
+    background: #e58c85;
+}
+
+.box:nth-child(2) .icon{
+    background: #503335;
+}
+.box:nth-child(3) .icon{
+    background: #FFB6C1;
+}
+
+.icon{
+    font-family: Gabriola;
+    position: relative;
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 700;
+    float :right;
+    margin: 0px 0px 150px 0px;
+    border: 1px solid color;
+}
+.content{
+   
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+.box:hover .content{
+    color: #fff;
+}
+.content p{
+    font-family: Gadugi;
+    text-align: justify;
+    margin: 45px;
+    padding: 0;
+}
+
+
+@media screen and (min-width: 992px){
+    .gridwrapper{
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto auto;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 991px){
+    .gridwrapper{
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto auto;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 768px){
+    .gridwrapper{
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto auto;
+        box-sizing: border-box;
+    }
+}
